@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Usabilidad + JS</title>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+  </head>
+  <body>
+    <article>
+      <section data-bespoke-hash="zero" data-bespoke-state="white-background" class="background-full meetups-logo"></section>
+      <section data-bespoke-hash="initial">
+        <h1>Usabilidad + <span class="js">JS</span></h1>
+        <footer>
+          <p class="subtle">Por Diego Paez (<a class="tw" href="https://twitter.com/carax">@carax</a>)</p>
+        </footer>
+      </section>
+      <section data-bespoke-hash="how" class="background-full roadmap">
+        <h2>Roadmap</h2>
+        <h3 class="bullet"></h3>
+        <ol>
+          <li>Introducción, ¿de qué estamos hablando?</li>
+          <li>¿Cómo se hace?</li>
+          <li>¿Equipo UX?</li>
+        </ol>
+      </section>
+      <section data-bespoke-hash="what">
+        <blockquote cite="http://www.nngroup.com/articles/usability-101-introduction-to-usability/">
+          <p>Usabilidad representa un atributo de calidad de nuestro producto.</p>
+        </blockquote>
+      </section>
+      <section data-bespoke-hash="what-2">
+        <h2 class="bullet">La usabilidad esta definida por <strong>5</strong> capacidades</h2>
+        <ul>
+          <li>Capacidad de aprendizaje</li>
+          <li>Capacidad de realizar la tarea (eficientemente)</li>
+          <li>Capacidad de recordarla</li>
+          <li>Capacidad de manejar errores</li>
+          <li>Capacidad de satisfacer</li>
+        </ul>
+      </section>
+      <section data-bespoke-hash="what-3">
+        <h2>Experiencia de Usuario (UX)</h2>
+        <blockquote cite="http://www.nngroup.com/articles/definition-user-experience/">
+          <p>
+            El primer requisito para una ejemplar experiencia de usuario es cumplir con las necesidades exactas del cliente, sin divagar ni complicar.
+            Luego viene la simpleza y la elegancia que llevan al producto a ser algo que es placentero poseer y usar.
+          </p>
+        </blockquote>
+      </section>
+      <section data-bespoke-hash="what-4"><img src="images/friendly-ux.png" class="low_quality"></section>
+      <section data-bespoke-hash="what-5">
+        <h2>Usabilidad & UX en la Web </h2>
+      </section>
+      <section data-bespoke-hash="samples">
+        <h3><a href="https://www.airbnb.com/">airbnb</a></h3>
+        <video src="images/airbnb.webm" controls="controls"></video>
+      </section>
+      <section data-bespoke-hash="samples-2">
+        <h3><a href="http://storymap.knightlab.com/">storymap</a></h3>
+        <video src="images/storymap.webm" controls="controls">       </video>
+      </section>
+      <section data-bespoke-hash=""><img src="images/pyramid.png" piramide de maslow re-interpretada class="pyramid">
+        <footer><a href="http://aarronwalter.com/">Por Aaron Walter</a></footer>
+      </section>
+      <section data-bespoke-hash="rule">
+        <h2>UX sin investigación no es UX</h2>
+        <p>o...</p>
+        <h2>¿Cómo llegar a estas soluciones?</h2>
+      </section>
+      <section data-bespoke-hash="rule-2">
+        <h2>Rol de investigador de UX</h2>
+      </section>
+      <section>
+        <p>Medir todo. Antes y despues de aplicar cambios.</p><img src="http://www.animated-gifs.eu/objects-measure/0001.gif" alt="metro">
+      </section>
+      <section>
+        <h2 class="bullet">¿Qué medir?</h2>
+        <ul>
+          <li>Nro. de visitas por sección.</li>
+          <li>Accesos a eventos especiales (ventas, desgargas).</li>
+          <li>Volumen de ventas/descargas.</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="bullet">¿Cómo medirlo?</h2>
+        <ul>
+          <li>Herramientas tipo analytics (google o <a href="http://piwik.org/">PIWIK</a>).</li>
+          <li>Encuestas tipo <a href="http://www.polarb.com/">polarb</a>. </li>
+          <li>O usando "herramientas propias", e.g. modulo pub/sub en el frontend informando sobre eventos especiales.</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="bullet">Cómo llegar una posible solución</h2>
+      </section>
+      <section class="background-full proto-paper">
+        <h2>Prototipado en papel</h2>
+      </section>
+      <section class="background-full mockup">
+        <h2>mockups</h2>
+      </section>
+      <section class="background-full storyboard">
+        <h2>storyboards</h2>
+      </section>
+      <section>
+        <h2 class="bullet">Luego de tener datos y posible solución...</h2>
+        <ul>
+          <li>Podemos elegir cuando aplicarla.</li>
+          <li>Y volvemos a medir como antes.</li>
+          <li>De esta forma sabemos si estamos haciendo una diferencia y si la misma es <em class="positive">positiva</em> o <em class="negative">negativa</em>.</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="bullet">Re-uso</h2>
+        <ul>
+          <li>Si nuestra solución afecto <em class="positive">positivamente</em> al sistema.</li>
+          <li>Entonces podemos abstraerla e iterarla.</li>
+          <li>Y asi conseguimos una solución de UX "como componente".</li>
+        </ul>
+      </section>
+      <section data-bespoke-hash="code-intro">
+        <h2>Un poco de código</h2>
+        <pre><code class="language-javascript">console.log('Al fin!')
+</code></pre>
+      </section>
+      <section data-bespoke-hash="pluma">
+        <h2 class="bullet">Proyecto Pluma | <a href="http://es.wikipedia.org/wiki/Dise%C3%B1o_de_interacci%C3%B3n">Desarrollo de Interacción</a></h2>
+        <ul>
+          <li><span class="warning">⚠</span> Es una prueba de concepto. <span class="warning">⚠</span></li>
+          <li>La idea era construir una herramienta que permita a los Desarrolladores de Interacción (DxI), construir bocetos de HW.</li>
+          <li>bocetar en HW...</li>
+          <li>Repositorio: <a href="https://github.com/dpaez/pluma">Pluma</a></li>
+        </ul>
+      </section>
+      <section data-bespoke-hash="pluma-1" class="background-full pluma1"></section>
+      <section data-bespoke-hash="pluma-2" class="background-full pluma2"></section>
+      <section data-bespoke-hash="pluma-3" class="background-full pluma3"></section>
+      <section data-bespoke-hash="pluma-4" class="background-full pluma4"></section>
+      <section data-bespoke-hash="pluma-5" class="background-full pluma5"></section>
+      <section data-bespoke-hash="pluma-5" class="background-full pluma6"></section>
+      <section data-bespoke-hash="pluma-end">
+        <p>Si te gustaria participar, <a href="mailto:paez.di@gmail.com?subject=pluma-in">mail</a></p>
+      </section>
+      <section data-bespoke-hash="ux-team-intro">
+        <h2>Equipo de Usabilidad/UX</h2>
+      </section>
+      <section data-bespoke-hash="ux-team-exists"><img src="images/teamwork.gif"></section>
+      <section data-bespoke-hash="ux-team">
+        <h2 class="bullet">Situación:</h2>
+        <ul>
+          <li>Perfil de Diseñador/Desarrollador Web es difícil de encontrar.</li>
+          <li>No tiene porque ser una (1) sola persona.</li>
+          <li>Romper barreras con el "área" de diseño</li>
+          <li>¡Conoce a tu diseñador! <span class="positive">✔</span></li>
+          <li>Relación simbiótica entre desarrolladores <span class="positive">⇆</span> diseñadores.</li>
+        </ul>
+      </section>
+      <section data-bespoke-hash="end" class="background-full road-end"></section>
+    </article>
+    <script src="build/build.js"></script>
+  </body>
+</html>
