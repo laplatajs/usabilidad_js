@@ -1,0 +1,173 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Usabilidad + JS
+    link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      section(data-bespoke-hash="zero", data-bespoke-state="white-background").background-full.meetups-logo
+
+      section(data-bespoke-hash="initial")
+        h1 Usabilidad + <span class="js">JS</span>
+        footer
+          p.subtle Por Diego Paez (<a class="tw" href="https://twitter.com/carax">@carax</a>)
+
+      section(data-bespoke-hash="how").background-full.roadmap
+        h2 Roadmap
+        h3.bullet
+        ol
+          li Introducción, ¿de qué estamos hablando?
+          li ¿Cómo se hace?
+          li ¿Equipo UX?
+
+      section(data-bespoke-hash="what")
+        blockquote(cite="http://www.nngroup.com/articles/usability-101-introduction-to-usability/")
+          p Usabilidad representa un atributo de calidad de nuestro producto.
+
+
+      section(data-bespoke-hash="what-2")
+        h2.bullet La usabilidad esta definida por <strong>5</strong> capacidades
+        ul
+          li Capacidad de aprendizaje
+          li Capacidad de realizar la tarea (eficientemente)
+          li Capacidad de recordarla
+          li Capacidad de manejar errores
+          li Capacidad de satisfacer
+
+        //- Learnability: How easy is it for users to accomplish basic tasks the first time they encounter the design?
+        //- Efficiency: Once users have learned the design, how quickly can they perform tasks?
+        //- Memorability: When users return to the design after a period of not using it, how easily can they reestablish proficiency?
+        //- Errors: How many errors do users make, how severe are these errors, and how easily can they recover from the errors?
+        //- Satisfaction: How pleasant is it to use the design?
+
+      section(data-bespoke-hash="what-3")
+        h2 Experiencia de Usuario (UX)
+        blockquote(cite="http://www.nngroup.com/articles/definition-user-experience/")
+          p El primer requisito para una ejemplar experiencia de usuario es cumplir con las necesidades exactas del cliente, sin divagar ni complicar.
+            | Luego viene la simpleza y la elegancia que llevan al producto a ser algo que es placentero poseer y usar.
+
+      section(data-bespoke-hash="what-4")
+        img(src="images/friendly-ux.png").low_quality
+
+      section(data-bespoke-hash="what-5")
+        h2 Usabilidad & UX en la Web 
+
+      section(data-bespoke-hash="samples")
+        h3 <a href="https://www.airbnb.com/">airbnb</a>
+        video(src="images/airbnb.webm" controls="controls")
+
+      section(data-bespoke-hash="samples-2")
+        h3 <a href="http://storymap.knightlab.com/">storymap</a>
+        video(src="images/storymap.webm" controls="controls")        
+
+      section(data-bespoke-hash="")
+        img(src="images/pyramid.png", "piramide de maslow re-interpretada").pyramid
+        footer
+          a(href="http://aarronwalter.com/") Por Aaron Walter
+        
+
+      section(data-bespoke-hash="rule")
+        h2 UX sin investigación no es UX
+        p o...
+        h2 ¿Cómo llegar a estas soluciones?
+
+      section(data-bespoke-hash="rule-2")
+        h2 Rol de investigador de UX
+
+      section
+        p Medir todo. Antes y despues de aplicar cambios.
+        img(src="http://www.animated-gifs.eu/objects-measure/0001.gif", alt="metro")
+
+      section
+        h2.bullet ¿Qué medir?
+        ul
+          li Nro. de visitas por sección.
+          li Accesos a eventos especiales (ventas, desgargas).
+          li Volumen de ventas/descargas.
+
+      section
+        h2.bullet ¿Cómo medirlo?
+        ul 
+          li Herramientas tipo analytics (google o <a href="http://piwik.org/">PIWIK</a>).
+          li Encuestas tipo <a href="http://www.polarb.com/">polarb</a>. 
+          li O usando "herramientas propias", e.g. modulo pub/sub en el frontend informando sobre eventos especiales.
+
+      section
+        h2.bullet Cómo llegar una posible solución
+        
+      section.background-full.proto-paper
+        h2 Prototipado en papel
+
+      section.background-full.mockup
+        h2 mockups
+
+      section.background-full.storyboard
+        h2 storyboards
+
+      section
+        h2.bullet Luego de tener datos y posible solución...
+        ul
+          li Podemos elegir cuando aplicarla.
+          li Y volvemos a medir como antes.
+          li De esta forma sabemos si estamos haciendo una diferencia y si la misma es <em class="positive">positiva</em> o <em class="negative">negativa</em>.
+        
+      section
+        h2.bullet Re-uso
+        ul
+          li Si nuestra solución afecto <em class="positive">positivamente</em> al sistema.
+          li Entonces podemos abstraerla e iterarla.
+          li Y asi conseguimos una solución de UX "como componente".
+
+      section(data-bespoke-hash="code-intro")
+        h2 Un poco de código
+        pre
+          code.language-javascript.
+            console.log('Al fin!')
+
+      section(data-bespoke-hash="pluma")
+        h2.bullet Proyecto Pluma | <a href="http://es.wikipedia.org/wiki/Dise%C3%B1o_de_interacci%C3%B3n">Desarrollo de Interacción</a>
+        ul
+          li <span class="warning">⚠</span> Es una prueba de concepto. <span class="warning">⚠</span>
+          li La idea era construir una herramienta que permita a los Desarrolladores de Interacción (DxI), construir bocetos de HW.
+          li bocetar en HW...
+          li Repositorio: <a href="https://github.com/dpaez/pluma">Pluma</a>
+
+      section(data-bespoke-hash="pluma-1").background-full.pluma1
+
+      section(data-bespoke-hash="pluma-2").background-full.pluma2
+
+      section(data-bespoke-hash="pluma-3").background-full.pluma3
+
+      section(data-bespoke-hash="pluma-4").background-full.pluma4
+
+      section(data-bespoke-hash="pluma-5").background-full.pluma5
+      
+      section(data-bespoke-hash="pluma-5").background-full.pluma6
+
+      section(data-bespoke-hash="pluma-end")
+        p Si te gustaria participar, <a href="mailto:paez.di@gmail.com?subject=pluma-in">mail</a>
+
+      section(data-bespoke-hash="ux-team-intro")
+        h2 Equipo de Usabilidad/UX
+
+      section(data-bespoke-hash="ux-team-exists")
+        img(src="images/teamwork.gif")
+
+      section(data-bespoke-hash="ux-team")
+        h2.bullet Situación:
+        ul 
+          li Perfil de Diseñador/Desarrollador Web es difícil de encontrar.
+          li No tiene porque ser una (1) sola persona.
+          li Romper barreras con el "área" de diseño
+          li ¡Conoce a tu diseñador! <span class="positive">✔</span>
+          li Relación simbiótica entre desarrolladores <span class="positive">⇆</span> diseñadores.
+
+      section(data-bespoke-hash="end").background-full.road-end
+
+    script(src='build/build.js')
